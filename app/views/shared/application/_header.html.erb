@@ -1,0 +1,39 @@
+  <div class="container">
+    <div class="row">
+        <ul class="nav nav-pills pull-left">
+            <li ><%= link_to '主页', '#' %></li>
+        </ul>
+        <div class="pull-right">
+          <ul class="nav nav-pills">
+            <li><%= link_to '登录', '#' %></li>
+            <li><li><%= link_to '注册', '#' %></li>
+            </ul>
+        </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+<hr>
+
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <%= link_to root_path do %>
+            <i class="fa fa-home fa-4x" aria-hidden="true">Liang Hotel</i>
+          <% end %>
+          <!-- <div class="site-slogan">
+            <span>Wang Liang<br>Shuai Ge</span>
+          </div> -->
+
+        </div>
+        <div class="col-md-4 site-email">
+          <i class="fa fa-envelope" aria-hidden="true"><%= mail_to 'liang.wang@laxino.com' %></i>
+        </div><!-- /.site-email -->
+
+        <div class="col-md-4 site-phone">
+          <i class="fa fa-phone" aria-hidden="true"> 333-666-777 </i>
+        </div><!-- /.site-phone -->
+      </div>
+    </div><!-- /.container -->
+</div><!-- /#header -->
