@@ -1,77 +1,78 @@
 <%= render partial: 'banner' %>
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
+<div id="our-service row-bottom-padded-sm">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-heading">服务质量</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="icon row-bottom-padded-sm"><span class="fa fa-diamond fa-5x" aria-hidden="true"></span></div>
+          <h2>地理优越</h2>
+          <p>位于市中心附近，交通便利，随时可以出入各大赌场，最快倾家荡产的正确选择。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon row-bottom-padded-sm"><span class="fa fa-bolt fa-5x" aria-hidden="true"></span></div>
+          <h2>方便快捷</h2>
+          <p>只要肯花钱，没有办不到的事。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon row-bottom-padded-sm"><span class="fa fa-heart fa-5x" aria-hidden="true"></span></div>
+          <h2>大家的选择</h2>
+          <p>每年有超过三千的富翁入住我们的酒店变成负翁，提供天桥指路服务，输光之后随时能拎包入住。</p>
+        </div>
+      </div>
+  </div>
+</div>
 
-<div class="container marketing">
-
-  <!-- Three columns of text below the carousel -->
+<div id="product-screenshots">
   <div class="row">
-    <div class="col-lg-4">
-      <%= image_tag 'stars/boduo.jpg', width: '140px', height: '140px', class: 'img-circle' %>
-      <h2>はたのゆい </h2>
-      <p>亮仔Hotel, 拍片必选！</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <%= image_tag 'stars/mayun.jpg', width: '140px', height: '140px', class: 'img-circle' %>
-      <h2>马云</h2>
-      <p>亮仔这个小伙子，当初要不是沉迷于左边这位的小电影，可能阿里巴巴就不会诞生了.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <%= image_tag 'stars/mahuateng.jpg', width: '140px', height: '140px', class: 'img-circle' %>
-      <h2>马化腾</h2>
-      <p>我们要坚持原创，比如学习亮仔，用(没)心(钱)创(玩)造(你)快(麻)乐(弊)。</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-
-
-  <!-- START THE FEATURETTES -->
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <%= image_tag 'Chrysanthemum.jpg', width: '500px', height: '500px', class: 'img-fluid' %>
+    <div class="col-md-12 section-heading text-center">
+      <h2>客房服务</h2>
+      <div class="row text-center">
+          <h3>北海全鱼台北茶,京华特色菜肴佳. 金堂客点扒猪脸,三寿宾欣斑节虾. 元帅多怀脑羹味,酒人尽爱牛鞭花. 家常白玉汤园美,好鼓掌声贯彩霞.</h3>
+      </div>
     </div>
   </div>
+  <div class="owl-carousel-center">
+    <div><%=image_tag 'rooms/screen-1-1-login.jpg' %></div>
+    <div><%=image_tag 'rooms/screen-2-1-login.jpg' %></div>
+    <div><%=image_tag 'rooms/screen-1-8-list.jpg' %></div>
+    <div><%=image_tag 'rooms/screen-2-6-overview.jpg' %></div>
+    <div><%=image_tag 'rooms/screen-3-7-groups.jpg' %></div>
+    <div><%=image_tag 'rooms/screen-4-7-groups.jpg' %></div>
+    <div><%=image_tag 'rooms/screen-5-6-overview.jpg' %></div>
+</div>
 
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7 push-md-5">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5 pull-md-7">
-      <%= image_tag 'Desert.jpg', width: '500px', height: '500px', class: 'img-fluid' %>
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <%= image_tag 'Jellyfish.jpg', width: '500px', height: '500px', class: 'img-fluid' %>
-    </div>
-  </div>
-
-
-  <!-- /END THE FEATURETTES -->
-
-</div><!-- /.container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<script>
+  $('.owl-carousel-center').owlCarousel({
+    center: true,
+    items:2,
+    loop:false,
+    margin:10,
+    nav: true,
+    dots: true,
+    autoHeight: true,
+    smartSpeed: 500,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:4
+      },
+      1000:{
+        items:5
+      }
+    }
+  });
+  $('body').on('click', '.owl-item', function(){
+    var $this = $(this),
+    index = $this.index();
+    $('.owl-carousel-center .owl-dots > div').eq(index).trigger('click');
+  });
+</script>
