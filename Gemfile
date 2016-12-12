@@ -13,7 +13,13 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-gem 'bootstrap-sass'
+
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether'
+end
+# bootstrap 4
+gem 'bootstrap', '~> 4.0.0.alpha5'
 
 gem "font-awesome-rails"
 
