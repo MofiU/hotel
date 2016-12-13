@@ -26,6 +26,8 @@
   </div>
 </div>
 
+<div class="featurette-divider"></div>
+
 <div id="product-screenshots">
   <div class="row">
     <div class="col-md-12 section-heading text-center">
@@ -35,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="owl-carousel-center">
+  <div class="owl-carousel-center ">
     <div><%=image_tag 'rooms/screen-1-1-login.jpg' %></div>
     <div><%=image_tag 'rooms/screen-2-1-login.jpg' %></div>
     <div><%=image_tag 'rooms/screen-1-8-list.jpg' %></div>
@@ -43,36 +45,181 @@
     <div><%=image_tag 'rooms/screen-3-7-groups.jpg' %></div>
     <div><%=image_tag 'rooms/screen-4-7-groups.jpg' %></div>
     <div><%=image_tag 'rooms/screen-5-6-overview.jpg' %></div>
+  </div>
 </div>
 
-<script>
-  $('.owl-carousel-center').owlCarousel({
-    center: true,
-    items:2,
-    loop:false,
-    margin:10,
-    nav: true,
-    dots: true,
-    autoHeight: true,
-    smartSpeed: 500,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:4
-      },
-      1000:{
-        items:5
-      }
-    }
-  });
-  $('body').on('click', '.owl-item', function(){
-    var $this = $(this),
-    index = $this.index();
-    $('.owl-carousel-center .owl-dots > div').eq(index).trigger('click');
-  });
-</script>
+<div class="featurette-divider"></div>
+
+<div id="tour">
+  <div class="container">
+    <div class="row row-bottom-padded-lg">
+      <div class="col-md-10 push-md-1">
+        <div class="col-md-4">
+          <%= image_tag 'rooms/screen-1-1-login.jpg', class: 'img-feature-1' %>
+        </div>
+        <div class="col-md-7 push-md-1">
+          <h2>We create beautiful web and mobile apps.</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p><a href="#" class="btn btn-primary">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-bottom-padded-lg">
+      <div class="col-md-10 push-md-1">
+        <div class="col-md-7">
+          <h2>We create beautiful web and mobile apps.</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p><a href="#" class="btn btn-primary">Learn more</a></p>
+        </div>
+        <div class="col-md-4 push-md-1">
+          <%= image_tag 'rooms/screen-1-1-login.jpg', class: 'img-feature-1' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-bottom-padded-lg">
+      <div class="col-md-10 push-md-1">
+        <div class="col-md-4">
+          <%= image_tag 'rooms/screen-1-1-login.jpg', class: 'img-feature-1' %>
+        </div>
+        <div class="col-md-7 push-md-1">
+          <h2>We create beautiful web and mobile apps.</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p><a href="#" class="btn btn-primary">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="featurette-divider"></div>
+
+<div id="features">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="section-heading">
+        <h2>FEATURES</h2>
+        <div class="col-md-8 push-md-2">
+          <h3>
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-bottom-padded-sm">
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 desc">
+        <div class="col-md-3"><i class="fa fa-credit-card-alt fa-3x" aria-hidden="true"></i></div>
+        <div class="col-md-8">
+          <h3>完全免费</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 desc">
+        <div class="col-md-3"><i class="fa fa-female fa-3x" aria-hidden="true"></i></div>
+        <div class="col-md-8">
+          <h3>美女如云</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 desc">
+        <div class="col-md-3"><i class="fa fa-tv fa-3x" aria-hidden="true"></i></div>
+        <div class="col-md-8">
+          <h3>服务周到</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 desc">
+        <div class="col-md-3"><i class="fa fa-coffee fa-3x" aria-hidden="true"></i></div>
+        <div class="col-md-8">
+          <h3>安全舒适</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 desc">
+        <div class="col-md-3"><i class="fa fa-phone fa-3x" aria-hidden="true"></i></div>
+        <div class="col-md-8">
+          <h3>随叫随到</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 desc">
+        <div class="col-md-3"><i class="fa fa-apple fa-3x" aria-hidden="true"></i></div>
+        <div class="col-md-8">
+          <h3>嘿嘿嘿</h3>
+          <p>你邪恶了吧</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-heading text-center">
+        <h2>客户们这么评价我们...</h2>
+        <div class="col-md-8 push-md-2">
+          <h3>这些都来自真实的案例。</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+          <div class="box-testimony">
+            <blockquote>
+              <p>&ldquo;孩子输掉了，老婆也输掉了，我心爱的内裤也输掉了...Oh My Lady Gaga&rdquo;</p>
+            </blockquote>
+            <p class="author">王亮, 沙雕俱乐部会长</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="box-testimony">
+            <blockquote>
+              <p>&ldquo;小明，你来回答这个问题。滚蛋！让我滚出去直说。&rdquo;</p>
+            </blockquote>
+            <p class="author">小明, King Of 嘎嘎嘎</p>
+          </div>
+
+
+        </div>
+        <div class="col-md-4">
+          <div class="box-testimony">
+            <blockquote>
+              <p>&ldquo;在不安全的城市，我只敢光脚走路，生怕别人偷掉我收藏的鞋，自从在Liang Hotel住了一晚，我再也不用担心这个问题了，因为我的鞋都输光了。&rdquo;</p>
+            </blockquote>
+            <p class="author">海伟,鞋贩子集团总裁</p>
+          </div>
+
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div id="contact-us">
+  <div class="container">
+    <div class="row text-center section-heading">
+      <h2>欢迎联系我们,倒霉蛋. </h2>
+      <div class="row">
+        <button class="btn btn-primary">获取联系方式</button>
+      </div>
+    </div>
+  </div>
+</div>
