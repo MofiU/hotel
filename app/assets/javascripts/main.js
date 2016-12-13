@@ -2,7 +2,7 @@ $(function(){
   $('#product-screenshots .owl-carousel-center').owlCarousel({
     center: true,
     items:2,
-    loop:false,
+    loop:true,
     margin:10,
     nav: true,
     dots: true,
