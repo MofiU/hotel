@@ -53,20 +53,21 @@
     });
   };
 
-  var navActive = function(section) {
+  var navActive = function() {
 
-    var $el = $('#navigation > ul');
-    $el.find('li').removeClass('active');
-    $el.each(function(){
-      $(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
-    });
-
+    $('#navigation > ul').on('click', 'li', function(){
+      $('#navigation > ul li').each(function(index, el) {
+        $(el).removeClass('active')
+      })
+      $(this).addClass('active');
+    })
   };
 
 
   $(function(){
     owlCrouselFeatureSlide();
     windowScroll();
+    navActive();
   });
 
 }())

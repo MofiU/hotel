@@ -127,15 +127,25 @@ footer {
 
 #navigation {
   background-color: #BA78FF;
+  font-family: '微软雅黑';
   .navbar-brand {
     color: #4AE3B5;
   }
   ul {
     li{
       padding: 0 1em;
-      a:hover{
-        color: #fff;
+      a{
+        color: white;
+        border-bottom: 1px solid #BA78FF;
       }
+      a:hover{
+        color: #4AE3B5;
+        border-bottom: 1px solid #4AE3B5;
+      }
+    }
+    li.active a{
+      color: #4AE3B5;
+      border-bottom: 1px solid #4AE3B5;
     }
   }
 }
