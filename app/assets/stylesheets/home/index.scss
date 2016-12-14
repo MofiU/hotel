@@ -124,3 +124,24 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
 }
+
+#navigation {
+  background-color: #BA78FF;
+  .navbar-brand {
+    color: #4AE3B5;
+  }
+  ul {
+    li{
+      padding: 0 1em;
+      a:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+.login_panel{
+  padding-right: 10em;
+  li{
+    padding: 0 1em;
+  }
+}
